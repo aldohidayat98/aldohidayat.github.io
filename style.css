@@ -2,7 +2,7 @@
   padding-top: 5rem;
   background-color: #def2f1;
   background-image: url(img/bg.jpg);
-  background-size: cover;
+  background-size: auto;
 }
 
 #certificate {
