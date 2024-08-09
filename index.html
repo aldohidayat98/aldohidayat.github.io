@@ -1,537 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <!-- My CSS -->
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Bootstrap Icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
-
-    <title>My Portfolio | Aldo Hidayat</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body id="home">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: #3aafa9">
-      <div class="container">
-        <a class="navbar-brand" href="https://www.linkedin.com/in/aldohidayat98/">
-          <img src="img/thumbnail.jpg" alt="" width="30" class="rounded-circle border border-2" />
-          Aldo Hidayat
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#certificate">Certificate</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+    <div class="container-fluid px-0">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https://www.linkedin.com/in/aldohidayat98/" style="margin-left: 10px;">
+            <img src="images/thumbnail.png" alt="Aldo Hidayat" width="35px" class="rounded-circle border border-2" />
+            Aldo Hidayat
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="container px-3">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#certificate">Certificates</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-lg-3" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
-    <!-- Akhir Navbar -->
+      </nav>
+      <!-- End Navbar -->
 
-    <!-- Jumbotron -->
-    <section class="jumbotron text-center">
-      <img src="img/Aldo.jpg" alt="Aldo Hidayat" width="180" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4" style="color: white"><b>Aldo Hidayat</b></h1>
-      <p class="lead" style="color: white">QA Automation Engineer | Software Quality Assurance</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,160L48,176C96,192,192,224,288,229.3C384,235,480,213,576,181.3C672,149,768,107,864,106.7C960,107,1056,149,1152,176C1248,203,1344,213,1392,218.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir Jumbotron -->
-
-    <!-- About -->
-    <section id="about">
-      <div class="container" data-aos="fade-down" data-aos-duration="2000">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>About Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-10">
-            <p>
-              Saya Aldo Hidayat Lahir di Bogor, 1 Desember 1998 umur 24 Tahun. lulusan Universitas Gunadarma Jurusan Sistem Komputer. Saya adalah lulusan perguruan tinggi dengan (IPK 3,54) sebagai Sarjana Komputer (S.Kom). Dengan kemauan
-              yang besar, bertanggung jawab dengan pekerjaan saya dan cepat dalam beradaptasi. Saya mampu bekerja sama dengan tim, Sehingga saya dapat berkomunikasi dan bersosialisasi dengan baik. Saya
-              memiliki pengalaman bekerja di PT. BCA Finance Tbk (Outsource PT. EXA Mandiri) sebagai Software Quality Assurance. 
-              dan ini saya sebagai QA Automation Engineer di PT Bank Syariah Indonesia Tbk, saya fokus pada Job Automation untuk meningkatkan efisiensi dan kualitas.
-            </p>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 1440 320">
-        <path
-          fill="#def2f1"
-          fill-opacity="1"
-          d="M0,224L48,208C96,192,192,160,288,133.3C384,107,480,85,576,90.7C672,96,768,128,864,160C960,192,1056,224,1152,224C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- Akhir About -->
-
-    <!-- Experience -->
-    <section id="experience">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col mb-2">
-            <h2>Experience</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-5 mb-3" data-aos="zoom-in" data-aos-duration="1000">
-            <div class="card text-center p-2">
-              <div class="perusahaan1">
-                <img src="img/experience/bsi.png" alt="" width="50" class="rounded-circle border border-2 text-color :" />
-                <p><b>PT Bank Syariah Indonesia .Tbk</b></p>
-              </div>
-              <div class="card-body">
-                <p class="card-job text-start ps-2 mb-0"><b>QA Automation Engineer</b></p>
-                <p class="card-date text-start ps-2 mb-0"><i>November 2023 - Sekarang</i></p>
-                <p class="card-text text-start ps-2" style="font-size: small">
-                  QA Automation Engineer - IT Release Management and Testing <br />
-                  •  Design, develop, and execute automated test scripts using the Selenium framework with Python or UFT.<br />
-                  •  Analyze user requirements and apply the business model and its integration to understand the as-is process.<br />
-                  •  Implement the Page Object model in Selenium to organize and structure the test scripts.<br />
-                  •  Push and pull scripts to Github for collaboration with the team.<br />
-                  •  Generate a PDF report using a Python script and ensure that all testing results are easily understandable.<br />
-                  •  Be involved in the entire development life cycle and technical design review. <br /><br /><br />
+      <!-- Hero -->
+      <header class="bg-light py-5">
+        <div class="container px-5">
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-xl-7 col-xxl-6">
+              <div class="my-5">
+                <h2 class="text-center fw-bold mb-2">Hi! I am Aldo Hidayat,</h2>
+                <h2 class="text-primary text-center fw-bold mb-2">a QA Automation Engineer</h2>
+                <p class="lead text-muted mb-4">
+                  I specialize in QA Automation and have extensive experience in developing and executing automated test scripts. 
+                  Scroll down to see what I have been working on.
                 </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-5 mb-3" data-aos="zoom-in" data-aos-duration="1000">
-            <div class="card text-center p-2">
-              <div class="perusahaan2">
-                <img src="img/experience/bcaf.png" alt="" width="50" class="rounded-circle border border-2 text-color :" />
-                <p><b>PT BCA Finance .Tbk</b></p>
-              </div>
-              <div class="card-body">
-                <p class="card-job text-start ps-2 mb-0"><b>Software Quality Assurance</b></p>
-                <p class="card-date text-start ps-2 mb-0"><i>Mei 2023 - Oktober 2023</i></p>
-                <p class="card-text text-start ps-2" style="font-size: small">
-                  Team Quality Assurance - Business Process BCA Finance <br />
-                  • Testing App Automation Project with UiPath or Katalon Studio <br />
-                  • Create RPA / Testing Automation with UiPath or Katalon Studio <br />
-                  • Testing Manual for Mobile Apps and Website <br />
-                  • Create Test Script for UAT Project <br />
-                  • Create Documentation UAT for Manual Testing <br />
-                  • Create Conclusions and Testing Certificates <br /><br /><br /><br /><br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-5 mb-3" data-aos="zoom-in" data-aos-duration="1000">
-            <div class="card text-center p-2">
-              <div class="perusahaan3">
-                <img src="img/experience/bca.png" alt="" width="50" class="rounded-circle border border-2 text-color :" />
-                <p><b>Bank Central Asia .Tbk</b></p>
-              </div>
-              <div class="card-body">
-                <p class="card-job text-start ps-2 mb-0"><b>IT Mechanical Support</b></p>
-                <p class="card-date text-start ps-2 mb-0"><i>Maret 2022 - Desember 2022</i></p>
-                <p class="card-text text-start ps-2" style="font-size: small">
-                  Team Local Area Network - Network Infrastructure System. <br />
-                  • Support Network Connection to users who are experiencing problems <br />
-                  • Manage Cisco Catalsyt Devices <br />
-                  • Troubleshoot Network on End User <br />
-                  • Configuration Cisco catalytics 2960 SI/2960 X <br />
-                  • Network Monitoring with Fluke and Grafana(Real•time Bandwidth Monitoring) <br />
-                  • Network Monitoring SolarWinds (Utility Link DWDM) <br />
-                  • Monitoring & Reporting Interface DWDM and SSH Control with SecureCRT<br />
-                  • Support BCA live Streaming Events<br />
-                  • Network Traffic Analysis with Fluke and Presentation (Sharing Session)<br />
-                  • Installation Windows and Support Application <br />
-                  • Preventive Maintenance on Hub Rooms at Menara BCA <br />
-                  • Create Automated Screenshot Application with Python and Selenium
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-5 mb-3" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
-            <div class="card text-center p-2">
-              <div class="perusahaan4">
-                <img src="img/experience/stpp.jpg" alt="" width="50" class="rounded-circle border border-2" />
-                <p><b>STPP Bogor</b></p>
-              </div>
-              <div class="card-body">
-                <p class="card-job text-start ps-2 mb-0"><b>Praktik Kerja Lapangan</b></p>
-                <p class="card-date text-start ps-2 mb-0"><i>November 2015 - Januari 2016</i></p>
-                <p class="card-text text-start ps-2" style="font-size: small">
-                  • Menginstallasi Sistem Oprasi dan Software pada PC di Lab Komputer. <br />
-                  • Merancang Personal Komputer Dan Troubleshooting Komputer. <br />
-                  • Pemasangan kabel dan pengecekan Jaringan Lab Komputer. <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 1440 320">
-        <path
-          fill="#fff"
-          fill-opacity="1"
-          d="M0,288L48,277.3C96,267,192,245,288,234.7C384,224,480,224,576,234.7C672,245,768,267,864,266.7C960,267,1056,245,1152,245.3C1248,245,1344,267,1392,277.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- End Experience -->
-
-    <!-- Projects -->
-    <section id="projects">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col mb-2">
-            <h2>Projects</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3 text-center" data-aos="fade-left" data-aos-duration="1000">
-            <div class="card">
-              <img src="img/projects/NCMS.png" class="card-img-top" alt="projects1" />
-              <div class="card-body">
-                <p class="card-text">Projek Otomasi New CMS : Tujuanya adalah untuk Meningkatkan efisiensi, memastikan optimalitas alur kerja aplikasi web mobile menggunakan Selenium Webdriver dan Bahasa Pemograman Python.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3 text-center" data-aos="fade-left" data-aos-duration="1000">
-            <div class="card">
-              <img src="img/projects/UiPath.png" class="card-img-top" alt="projects1" />
-              <div class="card-body">
-                <p class="card-text">UiPath Comunity(Robotic Process Automation) : Tools yang di gunakan untuk meng-otomate aplikasi di PT BCA Finance, termasuk project Otomate Website ME Corporate, ME SHF, dan Aprova</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3 text-center" data-aos="fade-left" data-aos-duration="1000">
-            <div class="card">
-              <img src="img/projects/Mobile Entry Corporate.png" class="card-img-top" alt="projects1" />
-              <div class="card-body">
-                <p class="card-text">Projek Otomasi UiPath (Mobile Entry Corporate) : Tujuanya adalah untuk Meningkatkan efisiensi dengan mengurangi kerja manual, memastikan optimalitas alur kerja aplikasi web mobile.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3 text-center" data-aos="fade-right" data-aos-duration="1000">
-            <div class="card">
-              <img src="img/projects/Aprova.png" class="card-img-top" alt="projects1" />
-              <div class="card-body">
-                <p class="card-text">Projek Otomasi UiPath (Aprova) : Tujuanya adalah untuk Meningkatkan efisiensi dengan mengurangi kerja manual, memastikan optimalitas alur kerja aplikasi web mobile.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3 text-center" data-aos="fade-right" data-aos-duration="1000">
-            <div class="card">
-              <img src="img/projects/Mobile Entry SHF.png" class="card-img-top" alt="projects1" />
-              <div class="card-body">
-                <p class="card-text">Projek Otomasi UiPath (Mobile Entry SHF) : Tujuanya adalah untuk Meningkatkan efisiensi dengan mengurangi kerja manual, memastikan optimalitas alur kerja aplikasi web mobile.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3 text-center" data-aos="fade-right" data-aos-duration="1000">
-            <div class="card">
-              <img src="img/projects/AS.png" class="card-img-top" alt="projects1" />
-              <div class="card-body">
-                <p class="card-text">Screen Capture Otomatis untuk Dokumentasi Traffic Network pada Aplikasi Website Fluke di PT. Bank Central Asia menggunakan Bahasa Pemograman Python dan Selenium Webdriver.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3 text-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
-            <div class="card">
-              <img src="img/projects/VAS.png" class="card-img-top" alt="projects2" />
-              <div class="card-body">
-                <p>
-                  <a class="card-text" style="text-decoration: none; color: black" href="https://www.youtube.com/watch?v=mWkekuMHtZo">
-                    Video Demo Screen Capture Otomatis untuk Dokumentasi Traffic Network pada Aplikasi Website Fluke di PT. Bank Central Asia menggunakan Bahasa Pemograman Python dan Selenium Webdriver.
+                <div class="d-grid gap-3 d-sm-flex justify-content-center">
+                  <a class="btn btn-primary btn-large text-uppercase" href="#about">
+                    Learn More
+                    <span class="material-icons-outlined ms-2">help_outline</span>
                   </a>
+                  <a class="btn btn-outline-primary btn-large text-uppercase" href="#projects">
+                    View My Work
+                    <span class="material-icons-outlined ms-2">manage_search</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-5 col-xxl-3 justify-content-center">
+              <img class="img-fluid rounded-3 my-5" src="images/hero.png" alt="Hero Image">
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- End Hero -->
+
+      <main>
+        <!-- About -->
+        <section id="about" class="text-center py-5">
+          <div class="container py-5">
+            <div class="row justify-content-center">
+              <h2 class="fw-bold">About</h2>
+              <p class="lead text-muted mb-5">
+                I'm a Computer Science graduate from Gunadarma University with extensive experience in technical support and software testing. 
+                I started my career at PT Bank Central Asia Tbk. and PT BCA Finance, where I gained valuable insights into technical support and quality assurance. 
+                Currently, I am working as a QA Automation Engineer at PT Bank Syariah Indonesia Tbk. In this role, I focus on automating processes to enhance efficiency and quality. 
+                My responsibilities include designing, developing, and executing automated test scripts using the Selenium Pytest framework with Python or UFT, 
+                and implementing the Page Object Model in Selenium to organize and structure the test scripts. 
+                I also generate comprehensive PDF reports using Python and use Allure Report to ensure testing outcomes are clearly communicated.
+              </p>
+            </div>
+          </div>
+          <div class="container mb-5">
+            <div class="row">
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="d-flex mb-5 about">
+                  <span class="material-icons-outlined m-auto text-primary">palette</span>
+                </div>
+                <h5>Design</h5>
+                <p class="text-muted mb-0">
+                  I create beautiful, modern designs optimized for multiple
+                  color modes (light and dark themes).
+                </p>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="d-flex mb-5 about">
+                  <span class="material-icons-outlined m-auto text-primary">code</span>
+                </div>
+                <h5>Development</h5>
+                <p class="text-muted mb-0">
+                  I develop responsive, scalable, and fast applications using
+                  the best standards and coding practices.
+                </p>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="d-flex mb-5 about">
+                  <span class="material-icons-outlined m-auto text-primary">settings</span>
+                </div>
+                <h5>Launch & Maintenance</h5>
+                <p class="text-muted mb-0">
+                  Once the application is ready, I will help you launch it and
+                  teach you how to update and maintain it.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3 text-center" data-aos="fade-left" data-aos-duration="1000">
-            <div class="card">
-              <img src="img/projects/PI.png" class="card-img-top" alt="projects1" />
-              <div class="card-body">
-                <p class="card-text">Alat Penyiram Tanaman Otomatis Menggunakan Capacitive Soile Moisture Berbasis Arduino Uno, Proyek ini di buat sebagai syarat Kelulusan Sarjana Komputer di Universitas Gunadarma.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3 text-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
-            <div class="card">
-              <img src="img/projects/PI2.png" class="card-img-top" alt="projects2" />
-              <div class="card-body">
-                <p class="card-text">Foto rumah tanaman konvensional dengan sensor capacitive soile moisture dan Pompa DC. Proyek ini di buat sebagai syarat Kelulusan Sarjana Komputer di Universitas Gunadarma.<br /></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 1440 320">
-        <path
-          fill="#def2f1"
-          fill-opacity="1"
-          d="M0,224L48,208C96,192,192,160,288,133.3C384,107,480,85,576,90.7C672,96,768,128,864,160C960,192,1056,224,1152,224C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- End Projects -->
+        </section>
+        <!-- End About -->
 
-    <!-- certificate -->
-    <section id="certificate">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col mb-2">
-            <h2>Certificate</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-5 mb-3 text-center" data-aos="flip-left" data-aos-duration="500">
-            <div class="card">
-              <img src="img/cetrificate/0.jpg" class="card-img-top" alt="projects0" />
-              <div class="card-body">
-                <p class="card-text">Python From Scratch & Selenium WebDriver QA Automation 2023 Certificate of Completion</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3 text-center" data-aos="flip-down" data-aos-duration="500">
-            <div class="card">
-              <img src="img/cetrificate/1.jpg" class="card-img-top" alt="projects1" />
-              <div class="card-body">
-                <p class="card-text">"Workshop Backend 101" held on January 20, 2022 by Alterra Academy</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3 text-center" data-aos="flip-down" data-aos-duration="500" data-aos-delay="100">
-            <div class="card">
-              <img src="img/cetrificate/2.jpg" class="card-img-top" alt="projects2" />
-              <div class="card-body">
-                <p class="card-text">"Basic Unit Testing with GOLANG" held on February 21, 2022 by Alterra Academy</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3 text-center" data-aos="flip-down" data-aos-duration="500" data-aos-delay="200">
-            <div class="card">
-              <img src="img/cetrificate/3.jpg" class="card-img-top" alt="projects3" />
-              <div class="card-body">
-                <p class="card-text">Sertifikat Kursus E-L WHAT IS WRONG WITH DATA for Outsource</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3 text-center" data-aos="flip-left" data-aos-duration="500">
-            <div class="card">
-              <img src="img/cetrificate/4.jpg" class="card-img-top" alt="projects1" />
-              <div class="card-body">
-                <p class="card-text">Certificate Of Competence Junior Computer Network Technicians in the area of Computer Network</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3 text-center" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
-            <div class="card">
-              <img src="img/cetrificate/5.jpg" class="card-img-top" alt="projects2" />
-              <div class="card-body">
-                <p class="card-text">List of Units of Competence</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3 text-center" data-aos="flip-right">
-            <div class="card">
-              <img src="img/cetrificate/6.jpg" class="card-img-top" alt="projects1" />
-              <div class="card-body">
-                <p class="card-text">Sertifikat Jenjang setara Sarjana Muda Jurusan Sistem Komputer</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3 text-center" data-aos="flip-right" data-aos-duration="500" data-aos-delay="100">
-            <div class="card">
-              <img src="img/cetrificate/7.jpg" class="card-img-top" alt="projects2" />
-              <div class="card-body">
-                <p class="card-text">Penelitian : Sistem Penyiram Tanaman Sawi China Otomatis Menggunakan Sensor Capacitive Soile Moisture Berbasis Arduino Uno</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3 text-center" data-aos="flip-right" data-aos-duration="500" data-aos-delay="200">
-            <div class="card">
-              <img src="img/cetrificate/8.png" class="card-img-top" alt="projects3" />
-              <div class="card-body">
-                <p class="card-text">Certificate Scientific Publication Dissemination from Computer Science Students</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3 text-center" data-aos="flip-left" data-aos-duration="500">
-            <div class="card">
-              <img src="img/cetrificate/9.jpg" class="card-img-top" alt="projects4" />
-              <div class="card-body">
-                <p class="card-text">Certificate as Participant Embeded System Competition 2019</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3 text-center" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
-            <div class="card">
-              <img src="img/cetrificate/10.jpg" class="card-img-top" alt="projects5" />
-              <div class="card-body">
-                <p class="card-text">Sertifikat Kompetensi Keahlian Rekayasa Perangkat Lunak</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3 text-center" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
-            <div class="card">
-              <img src="img/cetrificate/11.jpg" class="card-img-top" alt="projects1" />
-              <div class="card-body">
-                <p class="card-text">Sertifikat Praktik Kerja Industri(Prakerin)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 1440 320">
-        <path
-          fill="#fff"
-          fill-opacity="1"
-          d="M0,288L48,277.3C96,267,192,245,288,234.7C384,224,480,224,576,234.7C672,245,768,267,864,266.7C960,267,1056,245,1152,245.3C1248,245,1344,267,1392,277.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- End Certificate -->
+        <hr>
 
-    <!-- Contact -->
-    <section id="contact">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Contact Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-              <strong>Terimakasih!</strong> Pesan anda sudah kami terima.
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <!-- Projects -->
+        <section id="projects" class="text-center py-5">
+          <div class="container py-5">
+            <div class="row justify-content-center">
+              <h2 class="fw-bold">Projects</h2>
+              <p class="lead text-muted mb-0">View some of my latest projects</p>
             </div>
-            <form name="contact-form">
-              <div class="mb-3">
-                <label for="name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
-              </div>
-              <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
-              </div>
-              <!-- Button Kirim -->
-              <button type="submit" class="btn btn-kirim" style="background: #3aafa9; color: #fff">Kirim</button>
-              <!-- Button Loading -->
-              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                Loading...
-              </button>
-            </form>
           </div>
+          <div class="container mb-5">
+            <div class="row">
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" src="images/project1.png" alt="Project 1">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">Cryptocurrency Dashboard</h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">Django</div>
+                      <div class="badge bg-primary rounded-pill">React</div>
+                      <div class="badge bg-primary rounded-pill">Material UI</div>
+                    </div>
+                    <p class="card-text">
+                      A cryptocurrency dashboard app built using React 17,
+                      Material UI 5 and Chart.js 3.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent mb-3">
+                    <a
+                      class="btn btn-outline-primary btn-sm text-uppercase"
+                      href="https://github.com/BobsProgrammingAcademy/cryptocurrency-dashboard"
+                      target="_blank"
+                    >
+                      <span class="material-icons-outlined me-1">code</span>
+                      Source Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" src="images/project2.png" alt="Project 2">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">Portfolio Website</h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">React</div>
+                      <div class="badge bg-primary rounded-pill">Bootstrap</div>
+                      <div class="badge bg-primary rounded-pill">Sass</div>
+                    </div>
+                    <p class="card-text">
+                      A personal portfolio website to showcase projects, skills
+                      and experience.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent mb-3">
+                    <a
+                      class="btn btn-outline-primary btn-sm text-uppercase"
+                      href="https://github.com/BobsProgrammingAcademy/portfolio"
+                      target="_blank"
+                    >
+                      <span class="material-icons-outlined me-1">code</span>
+                      Source Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" src="images/project3.png" alt="Project 3">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">E-commerce Platform</h5>
+                    <div class="mb-2">
+                      <div class="badge bg-primary rounded-pill">Django</div>
+                      <div class="badge bg-primary rounded-pill">React</div>
+                      <div class="badge bg-primary rounded-pill">Stripe</div>
+                    </div>
+                    <p class="card-text">
+                      An e-commerce platform with integrated Stripe payment
+                      gateway and user authentication.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent mb-3">
+                    <a
+                      class="btn btn-outline-primary btn-sm text-uppercase"
+                      href="https://github.com/BobsProgrammingAcademy/ecommerce-platform"
+                      target="_blank"
+                    >
+                      <span class="material-icons-outlined me-1">code</span>
+                      Source Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Projects -->
+
+        <hr>
+
+        <!-- Experience -->
+        <section id="experience" class="text-center py-5 experience-container">
+          <div class="container py-5">
+            <div class="row justify-content-center">
+              <h2 class="fw-bold m-auto">Experience</h2>
+              <p class="lead text-muted mb-5">What others are saying</p>
+            </div>
+          </div>
+          <div class="container mb-5">
+            <div class="row">
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0">
+                  <div class="card-body p-4">
+                    <div class="d-flex">
+                      <div class="avatar avatar-xl rounded-circle me-3">
+                        <img src="images/user1.png" alt="Testimonial 1" />
+                      </div>
+                      <div class="d-flex flex-column">
+                        <h5 class="fw-bold">Budi Santoso</h5>
+                        <span class="text-muted">Manager at ABC Company</span>
+                      </div>
+                    </div>
+                    <p class="mt-4">
+                      Aldo is a highly skilled and dedicated QA Automation Engineer.
+                      His attention to detail and commitment to quality are second to none.
+                      He has consistently delivered high-quality results on time and within budget.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0">
+                  <div class="card-body p-4">
+                    <div class="d-flex">
+                      <div class="avatar avatar-xl rounded-circle me-3">
+                        <img src="images/user2.png" alt="Testimonial 2" />
+                      </div>
+                      <div class="d-flex flex-column">
+                        <h5 class="fw-bold">Siti Aminah</h5>
+                        <span class="text-muted">Senior Developer at XYZ Company</span>
+                      </div>
+                    </div>
+                    <p class="mt-4">
+                      Aldo is a highly skilled and dedicated QA Automation Engineer.
+                      His attention to detail and commitment to quality are second to none.
+                      He has consistently delivered high-quality results on time and within budget.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0">
+                  <div class="card-body p-4">
+                    <div class="d-flex">
+                      <div class="avatar avatar-xl rounded-circle me-3">
+                        <img src="images/user3.png" alt="Testimonial 3" />
+                      </div>
+                      <div class="d-flex flex-column">
+                        <h5 class="fw-bold">Andi Wijaya</h5>
+                        <span class="text-muted">QA Lead at DEF Company</span>
+                      </div>
+                    </div>
+                    <p class="mt-4">
+                      Aldo is a highly skilled and dedicated QA Automation Engineer.
+                      His attention to detail and commitment to quality are second to none.
+                      He has consistently delivered high-quality results on time and within budget.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Experience -->
+
+        <hr>
+
+        <!-- Certificates -->
+        <section id="certificate" class="text-center py-5">
+          <div class="container py-5">
+            <div class="row justify-content-center">
+              <h2 class="fw-bold">Certificates</h2>
+              <p class="lead text-muted mb-5">Certificates and qualifications</p>
+            </div>
+            <div class="row">
+              <!-- Certificate Item 1 -->
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" src="images/project1.png" alt="Certificate 1">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">Certificate Title</h5>
+                    <p class="card-text">
+                      A brief description of the certificate and its significance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Add more certificate items as needed -->
+
+              <!-- Certificate Item 2 -->
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" src="images/project2.png" alt="Certificate 2">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">Certificate Title</h5>
+                    <p class="card-text">
+                      A brief description of the certificate and its significance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Add more certificate items as needed -->
+
+              <!-- Certificate Item 3 -->
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" src="images/project3.png" alt="Certificate 3">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3">Certificate Title</h5>
+                    <p class="card-text">
+                      A brief description of the certificate and its significance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Add more certificate items as needed -->
+            </div>
+          </div>
+        </section>
+        <!-- End Certificates -->
+
+        <hr>
+
+        <!-- Contact -->
+        <section id="contact" class="text-center py-5">
+          <div class="container py-5">
+            <div class="row justify-content-center">
+              <h2 class="fw-bold">Contact</h2>
+              <p class="lead text-muted mb-5">I'd love to hear from you</p>
+              <div class="col-lg-8 col-xl-6">
+                <form id="contact-form">
+                  <div class="mb-3">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="mb-3">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                  </div>
+                  <div class="mb-3">
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Contact -->
+      </main>
+
+      <!-- Footer -->
+      <footer class="bg-light py-5">
+        <div class="container text-center">
+          <p class="text-muted mb-0">© 2024 Aldo Hidayat. All rights reserved.</p>
         </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#3aafa9"
-        fill-opacity="1" 
-        d="M0,96L48,90.7C96,85,192,75,288,101.3C384,128,480,192,576,192C672,192,768,128,864,117.3C960,107,1056,149,1152,170.7C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-      </path>
-      </svg>
-    </section>
-    <!-- End Contact -->
+      </footer>
+      <!-- End Footer -->
+    </div>
 
-    <!-- Footer -->
-    <footer class="text-white text-center pb-5" style="background-color: #3aafa9">
-      <p>
-        <a class="text-white fw-bold" href="https://www.linkedin.com/in/aldohidayat98/" style="text-decoration: none">Created with <i class="bi bi-heart-fill text-danger"></i> by Aldo Hidayat</a>
-      </p>
-    </footer>
-    <!-- End Footer -->
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Custom JS -->
     <script>
-      AOS.init({
-        once: true,
-      });
-    </script>
-
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-    <!-- /<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/TextPlugin.min.js"></script> -->
-    <script>
-      //gsap.registerPlugin(TextPlugin);
-      gsap.from(".lead", { duration: 1, x: 50, opacity: 0, delay: 0.5, ease: "back" });
-      gsap.from(".jumbotron img", { duration: 1, y: -100, opacity: 0 });
-      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
-      gsap.from(".display-4", { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: "back" });
-    </script>
-
-    <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbzgsxhkFF4xj-PnWKFACjOuT7PKqaIYAjKOEq8_x4Vraj5U2vwoAVflqUabiQiFlBktxw/exec";
-      const form = document.forms["contact-form"];
-      const btnKirim = document.querySelector(".btn-kirim");
-      const btnLoading = document.querySelector(".btn-loading");
-      const myAlert = document.querySelector(".my-alert");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        // Ketika Tombol Submit di Click
-        // Tampilkan Tombol Loading, Hilangkan Tombol Kirim
-        btnLoading.classList.toggle("d-none");
-        btnKirim.classList.toggle("d-none");
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            // Tampilkan Tombol kirim, Hilangkan Tombol Loading
-            btnLoading.classList.toggle("d-none");
-            btnKirim.classList.toggle("d-none");
-            //Tampilkan Alert
-            myAlert.classList.toggle("d-none");
-            // Reset Form
-            form.reset();
-            console.log("Success!", response);
-          })
-          .catch((error) => console.error("Error!", error.message));
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        var formData = new FormData(this);
+        fetch('https://script.google.com/macros/s/AKfycbwY5uXbXlBZ4-9nA06RnOaKKg8lSxkQUvkBe4UHXn3STy4mcKg2lxu212fCPuwlPr5DsA/exec', {
+          method: 'POST',
+          body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+          alert('Message sent successfully!');  
+          document.getElementById('contact-form').reset();
+        })
+        .catch(error => {
+          alert('An error occurred while sending your message.');
+        });
       });
     </script>
   </body>

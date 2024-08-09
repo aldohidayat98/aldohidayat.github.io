@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.material-icons-outlined {
+  vertical-align: middle;
+  line-height: 1px;
+}
+
+.navbar-brand > .material-icons-outlined {
+  font-size: 40px;
+}
+
+.about > .material-icons-outlined {
+  font-size: 50px;
+}
+
+.card > img {
+  height: 250px;
+}
+
+.testimonial > img {
+  height: 50px;
+  width: 50px;
+}
+
+#map {
+  height: 300px;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-footer {
+  background-color: transparent;
+}
+
+footer {
+  background-color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+  .hero img {
+    display: none;
+  }
+}
+
+
+
+/* experience Section */
+.experience-container {
+  background-color: #f8f9fa;
+  padding: 2rem 0;
+}
+
+.card {
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+  border: 2px solid #007bff;
+  padding: 2px;
+  width: 80px; /* Adjust width as needed */
+  height: 80px; /* Adjust height as needed */
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.avatar img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.avatar:hover {
+  border-color: #0056b3;
+}
+
+.card-body p {
+  font-style: italic;
+  color: #495057;
+}
+
+.card-body h5 {
+  color: #343a40;
+  font-weight: bold;
+}
+
+.card-body span {
+  color: #6c757d;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .avatar {
+    width: 30px; /* Adjust for smaller screens */
+    height: 30px; /* Adjust for smaller screens */
+  }
+  
+  .card-body p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Certificates Section */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
