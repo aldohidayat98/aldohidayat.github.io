@@ -105,6 +105,8 @@ footer {
   color: #6c757d;
 }
 
+
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .avatar {
@@ -116,6 +118,8 @@ footer {
     font-size: 0.9rem;
   }
 }
+
+
 
 /* Certificates Section */
 .card-img-top {
