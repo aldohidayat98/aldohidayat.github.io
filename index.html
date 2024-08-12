@@ -61,7 +61,7 @@
       <header class="bg-light py-5">
         <div class="container px-5">
           <div class="row align-items-center">
-            <div class="col-lg-8 col-xl-7 col-xxl-6">
+            <div class="col-lg-8 col-xl-7 col-xxl-6 hero-text">
               <div class="my-5">
                 <h2 class="text-center fw-bold mb-2">Hi! I am Aldo Hidayat,</h2>
                 <h2 class="text-primary text-center fw-bold mb-2">a QA Automation Engineer</h2>
@@ -81,12 +81,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-5 col-xxl-3 justify-content-center">
+            <div class="col-xl-5 col-xxl-3 hero-image justify-content-center">
               <img class="img-fluid rounded-3 my-5" src="images/hero.png" alt="Hero Image">
             </div>
           </div>
         </div>
-      </header>
+      </header>      
       <!-- End Hero -->
 
       <main>
@@ -163,17 +163,17 @@
                         <span class="text-muted">QA Automation Engineer</span>
                       </div>
                     </div>
-                    <p class="mt-4">
-                      Currently, I am working as a QA Automation Engineer at PT Bank Syariah Indonesia Tbk. In this role, 
-                      I focus on automating processes to enhance efficiency and quality. My responsibilities include designing, 
-                      developing, and executing automated test scripts using the Selenium Pytest framework with Python 
-                      or UFT, and implementing the Page Object Model in Selenium to organize and structure the test scripts. 
-                      I also generate comprehensive PDF reports using Python and use Allure Report to ensure testing outcomes 
-                      are clearly communicated.
-                    </p>
+                    <ul class="mt-4 text-start">
+                      <li>Automated processes to enhance efficiency and quality.</li>
+                      <li>Designed, developed, and executed automated test scripts using Selenium Pytest with Python or UFT.</li>
+                      <li>Implemented the Page Object Model in Selenium.</li>
+                      <li>Generated comprehensive PDF reports using Python.</li>
+                      <li>Used Allure Report to ensure clear communication of testing outcomes.</li>
+                    </ul>
                   </div>
                 </div>
               </div>
+        
               <div class="col-lg-4 mx-auto mb-5">
                 <div class="card h-100 shadow-lg border-0">
                   <div class="card-body p-4">
@@ -183,22 +183,20 @@
                       </div>
                       <div class="d-flex flex-column">
                         <h5 class="fw-bold">PT BCA Finance</h5>
-                        <span class="text-muted">software Quality Assurance</span>
+                        <span class="text-muted">Software Quality Assurance</span>
                       </div>
                     </div>
-                    <p class="mt-4">
-                      At PT BCA Finance, I was part of the Quality Assurance 
-                      team for Business Process BCA Finance. I worked on various app automation projects 
-                      using UiPath and Katalon Studio, developed RPA and testing automation, 
-                      and conducted manual testing for mobile apps and websites. 
-                      I also created test scripts for UAT projects, documented UAT processes, 
-                      and drafted conclusions and testing certificates. During my time there, 
-                      I contributed to over 25 UAT manual projects for BCA Finance applications and 
-                      automated several website projects using UiPath.
-                    </p>
+                    <ul class="mt-4 text-start">
+                      <li>Worked on app automation projects using UiPath and Katalon Studio.</li>
+                      <li>Developed RPA and testing automation.</li>
+                      <li>Conducted manual testing for mobile apps and websites.</li>
+                      <li>Created test scripts for UAT projects and documented processes.</li>
+                      <li>Contributed to over 25 UAT manual projects and automated several website projects.</li>
+                    </ul>
                   </div>
                 </div>
               </div>
+        
               <div class="col-lg-4 mx-auto mb-5">
                 <div class="card h-100 shadow-lg border-0">
                   <div class="card-body p-4">
@@ -211,19 +209,18 @@
                         <span class="text-muted">IT Mechanical Support</span>
                       </div>
                     </div>
-                    <p class="mt-4">
-                      Before my current role, I worked at PT Bank Central Asia Tbk, 
-                      where I provided mechanical IT support and ensured the smooth operation of IT systems. 
-                      This experience gave me a solid foundation in IT infrastructure support. 
-                      With a comprehensive background in both technical support and software testing, 
-                      I am well-equipped to tackle challenges and seize opportunities in the field of QA Automation.
-                    </p>
+                    <ul class="mt-4 text-start">
+                      <li>Provided mechanical IT support and ensured smooth IT system operations.</li>
+                      <li>Gained a solid foundation in IT infrastructure support.</li>
+                      <li>Combined technical support and software testing experience.</li>
+                      <li>Developed skills to tackle challenges in QA Automation.</li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </section>        
         <!-- End Experience -->
 
         <hr>
@@ -238,13 +235,14 @@
           </div>
           <div class="container mb-5">
             <div class="row">
+              <!-- Project 1 -->
               <div class="col-lg-4 mx-auto mb-5">
                 <div class="card h-100 shadow-lg border-0 bg-light">
                   <img class="card-img-top" src="images/projects/NCMS.png" alt="Project 1">
                   <div class="card-body p-4">
                     <h5 class="card-title mb-3">New Cash Management System</h5>
                     <div class="mb-2">
-                      <div class="badge bg-primary rounded-pill">Selenium Webdriver</div>
+                      <div class="badge bg-primary rounded-pill">Selenium WebDriver</div>
                       <div class="badge bg-primary rounded-pill">Pytest</div>
                       <div class="badge bg-primary rounded-pill">Allure Report</div>
                     </div>
@@ -254,17 +252,44 @@
                     </p>
                   </div>
                   <div class="card-footer bg-transparent mb-3">
-                    <a
+                    <button
                       class="btn btn-outline-primary btn-sm text-uppercase"
-                      href="https://github.com/BobsProgrammingAcademy/cryptocurrency-dashboard"
-                      target="_blank"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal1"
                     >
-                      <span class="material-icons-outlined me-1">code</span>
-                      Source Code
-                    </a>
+                      <span class="material-icons-outlined me-1">visibility</span>
+                      View Details
+                    </button>
                   </div>
                 </div>
               </div>
+              <!-- Project Modal 1 -->
+              <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="projectModalLabel1">New Cash Management System</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        In this project, automated testing was implemented for the New Cash Management System using Selenium WebDriver, Pytest, and Python. The project also included detailed reporting using Allure Report to ensure clear communication of testing outcomes. 
+                      </p>
+                      <p>
+                        The testing covered multiple critical functionalities to ensure the reliability and efficiency of the cash management processes within the system.
+                      </p>
+                      <ul>
+                        <li>Developed end-to-end test scripts using Selenium WebDriver.</li>
+                        <li>Utilized Pytest for structuring and executing the tests.</li>
+                        <li>Generated Allure Reports for comprehensive test results.</li>
+                        <li>Improved test coverage and reduced manual testing efforts.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 2 -->
               <div class="col-lg-4 mx-auto mb-5">
                 <div class="card h-100 shadow-lg border-0 bg-light">
                   <img class="card-img-top" src="images/projects/Mobile Entry SHF.png" alt="Project 2">
@@ -272,24 +297,51 @@
                     <h5 class="card-title mb-3">Mobile Entry SHF</h5>
                     <div class="mb-2">
                       <div class="badge bg-primary rounded-pill">UiPath</div>
-                      <div class="badge bg-primary rounded-pill">Microsoft Excell</div>
+                      <div class="badge bg-primary rounded-pill">Microsoft Excel</div>
                     </div>
                     <p class="card-text">
-                      Automated testing for Mobile Entry SHF using UiPath and Microsoft Excell
+                      Automated testing for Mobile Entry SHF using UiPath and Microsoft Excel.
                     </p>
                   </div>
                   <div class="card-footer bg-transparent mb-3">
-                    <a
+                    <button
                       class="btn btn-outline-primary btn-sm text-uppercase"
-                      href="https://github.com/BobsProgrammingAcademy/portfolio"
-                      target="_blank"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal2"
                     >
-                      <span class="material-icons-outlined me-1">code</span>
-                      Source Code
-                    </a>
+                      <span class="material-icons-outlined me-1">visibility</span>
+                      View Details
+                    </button>
                   </div>
                 </div>
               </div>
+              <!-- Project Modal 2 -->
+              <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="projectModalLabel2">Mobile Entry SHF</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        This project focused on automating the data entry process for SHF using UiPath and Microsoft Excel. The automation significantly reduced the manual effort required and improved data accuracy.
+                      </p>
+                      <p>
+                        The project involved the development of RPA (Robotic Process Automation) scripts that interfaced with various systems to streamline the SHF entry process.
+                      </p>
+                      <ul>
+                        <li>Automated data extraction and entry using UiPath.</li>
+                        <li>Integrated Microsoft Excel for data manipulation and validation.</li>
+                        <li>Enhanced process efficiency and reduced errors.</li>
+                        <li>Delivered a scalable solution for future data entry tasks.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 3 -->
               <div class="col-lg-4 mx-auto mb-5">
                 <div class="card h-100 shadow-lg border-0 bg-light">
                   <img class="card-img-top" src="images/projects/AS.png" alt="Project 3">
@@ -297,28 +349,55 @@
                     <h5 class="card-title mb-3">Automated Network Traffic Documentation</h5>
                     <div class="mb-2">
                       <div class="badge bg-primary rounded-pill">Python</div>
-                      <div class="badge bg-primary rounded-pill">Selenium Webdriver</div>
+                      <div class="badge bg-primary rounded-pill">Selenium WebDriver</div>
                     </div>
                     <p class="card-text">
-                      Application created for Automatic Network Traffic Documentation
+                      Application created for Automatic Network Traffic Documentation.
                     </p>
                   </div>
                   <div class="card-footer bg-transparent mb-3">
-                    <a
+                    <button
                       class="btn btn-outline-primary btn-sm text-uppercase"
-                      href="https://github.com/BobsProgrammingAcademy/ecommerce-platform"
-                      target="_blank"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal3"
                     >
-                      <span class="material-icons-outlined me-1">code</span>
-                      Source Code
-                    </a>
+                      <span class="material-icons-outlined me-1">visibility</span>
+                      View Details
+                    </button>
                   </div>
                 </div>
               </div>
+              <!-- Project Modal 3 -->
+              <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel3" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="projectModalLabel3">Automated Network Traffic Documentation</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        This project involved the development of an automated solution for documenting network traffic. Using Python and Selenium WebDriver, the solution captures and logs network data, providing insights for network management.
+                      </p>
+                      <p>
+                        The project aimed to reduce the manual effort involved in network documentation and improve the accuracy and timeliness of data reporting.
+                      </p>
+                      <ul>
+                        <li>Developed Python scripts for automated data capture.</li>
+                        <li>Implemented Selenium WebDriver for interaction with web-based network tools.</li>
+                        <li>Automated report generation and data analysis.</li>
+                        <li>Improved efficiency in network monitoring and documentation.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </section>
         <!-- End Projects -->
+
 
         <hr>
 
@@ -333,7 +412,7 @@
               <!-- Certificate Item 1 -->
               <div class="col-lg-4 mx-auto mb-5">
                 <div class="card h-100 shadow-lg border-0 bg-light">
-                  <img class="card-img-top" src="images/cetrificate/0.jpg" alt="Certificate 1">
+                  <img class="card-img-top" src="images/cetrificate/0.jpg" alt="Certificate 1" data-bs-toggle="modal" data-bs-target="#certificateModal1">
                   <div class="card-body p-4">
                     <h5 class="card-title mb-3">Python from Scratch & Selenium WebDriver QA Automation 2023</h5>
                     <p class="card-text">
@@ -342,12 +421,26 @@
                   </div>
                 </div>
               </div>
+              <!-- Certificate Modal 1 -->
+              <div class="modal fade" id="certificateModal1" tabindex="-1" aria-labelledby="certificateModalLabel1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="certificateModalLabel1">Python from Scratch & Selenium WebDriver QA Automation 2023</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/cetrificate/0.jpg" class="img-fluid" alt="Certificate 1">
+                    </div>
+                  </div>
+                </div>
+              </div>
               <!-- Add more certificate items as needed -->
 
               <!-- Certificate Item 2 -->
               <div class="col-lg-4 mx-auto mb-5">
                 <div class="card h-100 shadow-lg border-0 bg-light">
-                  <img class="card-img-top" src="images/cetrificate/4.jpg" alt="Certificate 2">
+                  <img class="card-img-top" src="images/cetrificate/4.jpg" alt="Certificate 2" data-bs-toggle="modal" data-bs-target="#certificateModal2">
                   <div class="card-body p-4">
                     <h5 class="card-title mb-3">Junior Computer Technicians</h5>
                     <p class="card-text">
@@ -356,12 +449,25 @@
                   </div>
                 </div>
               </div>
-              <!-- Add more certificate items as needed -->
+              <!-- Certificate Modal 2 -->
+              <div class="modal fade" id="certificateModal2" tabindex="-1" aria-labelledby="certificateModalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="certificateModalLabel2">Junior Computer Technicians</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/cetrificate/4.jpg" class="img-fluid" alt="Certificate 2">
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               <!-- Certificate Item 3 -->
               <div class="col-lg-4 mx-auto mb-5">
                 <div class="card h-100 shadow-lg border-0 bg-light">
-                  <img class="card-img-top" src="images/cetrificate/2.jpg" alt="Certificate 3">
+                  <img class="card-img-top" src="images/cetrificate/2.jpg" alt="Certificate 3" data-bs-toggle="modal" data-bs-target="#certificateModal3">
                   <div class="card-body p-4">
                     <h5 class="card-title mb-3">Workshop Basic Unit Testing with GOLANG</h5>
                     <p class="card-text">
@@ -370,11 +476,25 @@
                   </div>
                 </div>
               </div>
-              <!-- Add more certificate items as needed -->
+              <!-- Certificate Modal 3 -->
+              <div class="modal fade" id="certificateModal3" tabindex="-1" aria-labelledby="certificateModalLabel3" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="certificateModalLabel3">Workshop Basic Unit Testing with GOLANG</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/cetrificate/2.jpg" class="img-fluid" alt="Certificate 3">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
         <!-- End Certificates -->
+
 
         <hr>
 
