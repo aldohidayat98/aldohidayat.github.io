@@ -29,7 +29,7 @@ body {
 
 /* Hero Text Alignment */
 .hero-text {
-  margin-left: 10%; /* Adjust the percentage as needed */
+  margin-left: 0%; /* Adjust the percentage as needed */
 }
 
 /* Map Styling */
@@ -92,7 +92,7 @@ body {
 
 /* Avatar Styling */
 .avatar {
-  border: 4px solid #007bff;
+  border: 3px solid #007bff;
   padding: 0;
   width: 80px; /* Adjust width as needed */
   height: 80px; /* Adjust height as needed */
