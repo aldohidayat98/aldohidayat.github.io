@@ -152,4 +152,8 @@ footer {
   .card-body p {
     font-size: 0.9rem;
   }
+
+  .card-body h5 {
+    font-size: 1rem; /* Ukuran lebih kecil di layar yang lebih kecil */
+  }
 }
