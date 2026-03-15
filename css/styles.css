@@ -93,17 +93,23 @@ body {
 /* Avatar Styling */
 .avatar {
   border: 4px solid #e0e5e9;
-  padding: 0;
-  width: 80px; /* Adjust width as needed */
-  height: 80px; /* Adjust height as needed */
+  width: 80px;
+  height: 80px;
+  min-width: 80px;   /* penting supaya tidak mengecil */
+  min-height: 80px;  /* penting supaya tidak lonjong */
+  border-radius: 50%;
   overflow: hidden;
-  border-radius: 50%; /* Ensure it is circular */
+  background: #fff;
+  flex-shrink: 0;    /* supaya flex tidak merubah ukuran */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .avatar img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure the image covers the circle without distortion */
+  object-fit: contain;
 }
 
 .avatar:hover {
