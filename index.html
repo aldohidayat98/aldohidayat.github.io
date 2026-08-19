@@ -1,1041 +1,766 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aldo Hidayat — QA Automation Engineer portfolio">
+  <title>Aldo Hidayat | QA Automation Engineer</title>
 
-    <!-- Montserrat Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Material Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body id="home">
-    <div class="container-fluid px-0">
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="https://www.linkedin.com/in/aldohidayat98/" style="margin-left: 10px;">
-            <img src="images/thumbnail.png" alt="Aldo Hidayat" width="35px" class="rounded-circle border border-2" />
-            Aldo Hidayat
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="container px-3">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link me-lg-3" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-lg-3" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-lg-3" href="#experience">Experience</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-lg-3" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-lg-3" href="#certificate">Certificates</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link me-lg-3" href="#contact">Contact</a>
-                </li>
-              </ul>
+<body id="home">
+  <div class="bg-grid"></div>
+
+  <!-- Navbar -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <img src="images/thumbnail.png" alt="Aldo Hidayat" class="brand-avatar">
+        <span>Aldo<span class="brand-dot">.</span></span>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarContent"
+              aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="material-icons-outlined">menu</span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certificate">Certificates</a></li>
+
+          <!-- Theme Toggle -->
+          <li class="nav-item ms-lg-2">
+            <button
+              id="themeToggle"
+              class="theme-toggle"
+              type="button"
+              aria-label="Toggle theme"
+            >
+              <span class="material-icons-outlined">dark_mode</span>
+            </button>
+          </li>
+
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-primary btn-sm nav-cta" href="#contact">Let's Talk</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero-section section-pad">
+      <div class="container position-relative">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7 reveal">
+            <div class="eyebrow">
+              <span class="status-dot"></span>
+              QA AUTOMATION ENGINEER
+            </div>
+
+            <h1 class="hero-title">
+              I focus on quality,<br>
+              <span class="gradient-text">reliability, and automation.</span>
+            </h1>
+
+            <p class="hero-description">
+              Hi, I'm <strong>Aldo Hidayat</strong>. I work across test automation,
+              API testing, regression testing, and performance testing to help
+              teams deliver reliable software.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3 mb-4">
+              <a href="#projects" class="btn btn-primary btn-lg">
+                View My Work
+                <span class="material-icons-outlined ms-2">arrow_forward</span>
+              </a>
+              <a href="https://www.linkedin.com/in/aldohidayat98/" target="_blank" rel="noopener"
+                 class="btn btn-outline-light btn-lg">
+                LinkedIn
+                <span class="material-icons-outlined ms-2">open_in_new</span>
+              </a>
+            </div>
+
+            <div class="hero-meta">
+              <div>
+                <strong>QA</strong>
+                <span>Automation</span>
+              </div>
+              <div>
+                <strong>API</strong>
+                <span>Testing</span>
+              </div>
+              <div>
+                <strong>gRPC</strong>
+                <span>Performance</span>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
-      <!-- End Navbar -->
 
-      <!-- Hero -->
-      <header class="bg-light py-5">
-        <div class="container px-5">
-          <div class="row align-items-center">
-            <div class="col-lg-8 col-xl-7 col-xxl-6 hero-text">
-              <div class="my-5">
-                <h2 class="text-center fw-bold mb-2">Hi! I am Aldo Hidayat,</h2>
-                <h2 class="text-primary text-center fw-bold mb-2">a QA Automation Engineer</h2>
-                <p class="lead text-muted mb-4">
-                  I specialize in QA Automation and have extensive experience in developing and executing automated test scripts. 
-                  Scroll down to see what I have been working on.
-                </p>
-                <div class="d-grid gap-3 d-sm-flex justify-content-center">
-                  <a class="btn btn-primary btn-large text-uppercase" href="#about">
-                    Learn More
-                    <span class="material-icons-outlined ms-2">help_outline</span>
-                  </a>
-                  <a class="btn btn-outline-primary btn-large text-uppercase" href="#projects">
-                    View My Work
-                    <span class="material-icons-outlined ms-2">manage_search</span>
-                  </a>
+          <div class="col-lg-5 reveal reveal-delay">
+            <div class="hero-visual">
+              <div class="hero-glow"></div>
+              <div class="hero-card">
+                <img src="images/hero.png" alt="Aldo Hidayat portfolio illustration" class="img-fluid">
+              </div>
+
+              <div class="floating-card floating-card-top">
+                <span class="material-icons-outlined">verified</span>
+                <div>
+                  <small>Focus</small>
+                  <strong>Quality First</strong>
+                </div>
+              </div>
+
+              <div class="floating-card floating-card-bottom">
+                <span class="material-icons-outlined">terminal</span>
+                <div>
+                  <small>Stack</small>
+                  <strong>Playwright · Python · Katalon</strong>
                 </div>
               </div>
             </div>
-            <div class="col-xl-5 col-xxl-6 hero-image justify-content-center">
-              <img class="img-fluid rounded-3 my-5" src="images/hero.png" alt="Hero Image">
-            </div>
           </div>
         </div>
-      </header>      
-      <!-- End Hero -->
 
-      <main>
-        <!-- About -->
-        <section id="about" class="text-center py-5">
-          <div class="container py-5">
-            <div class="row justify-content-center">
-              <h2 class="fw-bold">About</h2>
-              <p class="lead text-muted mb-5">
-                I'm a Computer Science graduate from Gunadarma University with experience in software testing and quality assurance 
-                within the banking and financial services industry. I started my career at PT Bank Central Asia Tbk. 
-                and PT BCA Finance, where I gained experience in technical support, quality assurance, and test automation. 
-                Currently, I work as a QA Automation Engineer at PT Bank Rakyat Indonesia (Persero) Tbk., 
-                focusing on test automation using Katalon Studio with BDD, regression testing for Web UI, API, and gRPC services, 
-                as well as performance and stress testing using ghz. Previously, 
-                I worked as a QA Automation Engineer at PT Bank Syariah Indonesia Tbk., 
-                where I developed automated test scripts using Selenium Pytest with Python and UFT, 
-                implemented the Page Object Model (POM), and generated automated testing reports using Python and Allure Report.
+        <div class="scroll-hint">
+          <span class="material-icons-outlined">south</span>
+          Scroll to explore
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section-pad section-dark">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">01 / ABOUT</span>
+          <h2>Quality isn't a final step.<br><span>It's part of the process.</span></h2>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-7 reveal">
+            <div class="glass-card about-card h-100">
+              <p class="about-lead">
+                I'm a Computer Science graduate from Gunadarma University with
+                experience in software testing and quality assurance within the
+                banking and financial services industry.
+              </p>
+              <p>
+                My journey started in IT support and continued into software
+                quality assurance and test automation. Today, my work covers
+                functional, integration, end-to-end, API, UI, gRPC, regression,
+                performance, and stress testing.
+              </p>
+              <p class="mb-0">
+                I enjoy turning repetitive testing into reliable automation and
+                using technical analysis to find problems before they reach users.
               </p>
             </div>
           </div>
-          <div class="container mb-5">
-            <div class="row">
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="d-flex mb-5 about">
-                  <span class="material-icons-outlined m-auto text-primary">palette</span>
-                </div>
-                <h5>Test Automation Design</h5>
-                <p class="text-muted mb-0">
-                  I design comprehensive and efficient test automation frameworks tailored to specific project needs, ensuring thorough coverage and optimized execution.
-                </p>
-              </div>
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="d-flex mb-5 about">
-                  <span class="material-icons-outlined m-auto text-primary">code</span>
-                </div>
-                <h5>Script Development & Execution</h5>
-                <p class="text-muted mb-0">
-                  I develop and execute automated test scripts using industry-leading tools and practices, such as Selenium with Python, to ensure high-quality software delivery.
-                </p>
-              </div>
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="d-flex mb-5 about">
-                  <span class="material-icons-outlined m-auto text-primary">settings</span>
-                </div>
-                <h5>Continuous Integration & Monitoring</h5>
-                <p class="text-muted mb-0">
-                  I integrate automated tests into CI/CD pipelines, monitor test results, and continuously refine scripts to adapt to evolving project requirements.
-                </p>
-              </div>              
-            </div>
-          </div>
-        </section>
-        <!-- End About -->
 
-        <hr>
-
-      <!-- Experience -->
-      <section id="experience" class="text-center py-5 experience-container">
-        <div class="container py-5">
-          <div class="row justify-content-center">
-            <h2 class="fw-bold m-auto">Experience</h2>
-            <p class="lead text-muted mb-0">Career Highlights</p>
-          </div>
-        </div>
-
-        <div class="container mb-5">
-
-          <!-- Row 1 - 3 Cards -->
-          <div class="row justify-content-center">
-
-            <!-- BRI Auto -->
-            <div class="col-xl-4 col-lg-6 col-md-6 mb-5">
-              <div class="card h-100 shadow-lg border-0">
-                <div class="card-body p-4">
-                  <div class="d-flex align-items-center">
-                    <div class="avatar avatar-xl rounded-circle me-3">
-                      <img src="images/experience/bri.png" alt="BRI">
-                    </div>
-                    <div>
-                      <h5 class="fw-bold mb-0">PT Bank Rakyat Indonesia</h5>
-                      <span class="text-muted">QA Automation Engineer</span>
-                    </div>
-                  </div>
-
-                  <ul class="mt-4 text-start">
-                    <li>Designed and maintained test automation frameworks using Katalon Studio with BDD.</li>
-                    <li>Automated regression testing for Web UI, API, and gRPC services.</li>
-                    <li>Performed performance and stress testing for gRPC services using ghz.</li>
-                    <li>Managed automation source code using Bitbucket (Git) in an Agile/Scrum environment.</li>
-                  </ul>
+          <div class="col-lg-5 reveal reveal-delay">
+            <div class="row g-3 h-100">
+              <div class="col-6">
+                <div class="stat-card h-100">
+                  <span class="material-icons-outlined">code</span>
+                  <strong>Automation</strong>
+                  <small>UI, API & Regression</small>
                 </div>
               </div>
-            </div>
-
-            <!-- BRI -->
-            <div class="col-xl-4 col-lg-6 col-md-6 mb-5">
-              <div class="card h-100 shadow-lg border-0">
-                <div class="card-body p-4">
-                  <div class="d-flex align-items-center">
-                    <div class="avatar avatar-xl rounded-circle me-3">
-                      <img src="images/experience/bri.png" alt="BRI">
-                    </div>
-                    <div>
-                      <h5 class="fw-bold mb-0">PT Bank Rakyat Indonesia</h5>
-                      <span class="text-muted">Quality Assurance Engineer</span>
-                    </div>
-                  </div>
-
-                  <ul class="mt-4 text-start">
-                    <li>Designed and executed test scenarios for SIT, UAT, and piloting phases.</li>
-                    <li>Performed functional, integration, and end-to-end testing across branch and partner systems.</li>
-                    <li>Developed regression test automation using Playwright with POM.</li>
-                  </ul>
+              <div class="col-6">
+                <div class="stat-card h-100">
+                  <span class="material-icons-outlined">speed</span>
+                  <strong>Performance</strong>
+                  <small>gRPC & Stress Testing</small>
                 </div>
               </div>
-            </div>
-
-            <!-- BSI -->
-            <div class="col-xl-4 col-lg-6 col-md-6 mb-5">
-              <div class="card h-100 shadow-lg border-0">
-                <div class="card-body p-4">
-                  <div class="d-flex align-items-center">
-                    <div class="avatar avatar-xl rounded-circle me-3">
-                      <img src="images/experience/bsi.png" alt="BSI">
-                    </div>
-                    <div>
-                      <h5 class="fw-bold mb-0">PT Bank Syariah Indonesia</h5>
-                      <span class="text-muted">QA Automation Engineer</span>
-                    </div>
-                  </div>
-
-                  <ul class="mt-4 text-start">
-                    <li>Developed automated test scripts using Selenium Pytest (Python) and UFT.</li>
-                    <li>Implemented Page Object Model (POM) for structured automation framework.</li>
-                    <li>Used GitLab and JIRA for version control, sprint planning, and bug tracking.</li>
-                    <li>Generated automated test reports using Python and Allure Report.</li>
-                  </ul>
+              <div class="col-6">
+                <div class="stat-card h-100">
+                  <span class="material-icons-outlined">bug_report</span>
+                  <strong>QA</strong>
+                  <small>SIT, UAT & E2E</small>
                 </div>
               </div>
-            </div>
-
-          </div>
-
-          <!-- Row 2 - 2 Cards -->
-          <div class="row justify-content-center">
-
-            <!-- BCA Finance -->
-            <div class="col-xl-4 col-lg-6 col-md-6 mb-5">
-              <div class="card h-100 shadow-lg border-0">
-                <div class="card-body p-4">
-                  <div class="d-flex align-items-center">
-                    <div class="avatar avatar-xl rounded-circle me-3">
-                      <img src="images/experience/bcaf.png" alt="BCA Finance">
-                    </div>
-                    <div>
-                      <h5 class="fw-bold mb-0">PT BCA Finance</h5>
-                      <span class="text-muted">Software Quality Assurance</span>
-                    </div>
-                  </div>
-
-                  <ul class="mt-4 text-start">
-                    <li>Worked on app automation projects using UiPath and Katalon Studio.</li>
-                    <li>Developed RPA and testing automation solutions.</li>
-                    <li>Performed manual testing for mobile and web applications.</li>
-                    <li>Contributed to over 25 UAT projects and automation initiatives.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- BCA -->
-            <div class="col-xl-4 col-lg-6 col-md-6 mb-5">
-              <div class="card h-100 shadow-lg border-0">
-                <div class="card-body p-4">
-                  <div class="d-flex align-items-center">
-                    <div class="avatar avatar-xl rounded-circle me-3">
-                      <img src="images/experience/bca.png" alt="BCA">
-                    </div>
-                    <div>
-                      <h5 class="fw-bold mb-0">PT Bank Central Asia</h5>
-                      <span class="text-muted">IT Mechanical Support</span>
-                    </div>
-                  </div>
-
-                  <ul class="mt-4 text-start">
-                    <li>Provided IT mechanical support and ensured smooth system operations.</li>
-                    <li>Maintained hardware and IT infrastructure across operational environments.</li>
-                    <li>Built foundational experience in enterprise IT systems and support.</li>
-                  </ul>
+              <div class="col-6">
+                <div class="stat-card h-100">
+                  <span class="material-icons-outlined">account_balance</span>
+                  <strong>Banking</strong>
+                  <small>Financial Services</small>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- End Experience -->
 
-        <hr>
-
-        <!-- Projects -->
-        <section id="projects" class="text-center py-5">
-          <div class="container py-5">
-            <div class="row justify-content-center">
-              <h2 class="fw-bold">Projects</h2>
-              <p class="lead text-muted mb-0">View some of my latest projects</p>
-            </div>
+        <div class="tech-strip reveal">
+          <span>TOOLS I WORK WITH</span>
+          <div class="tech-list">
+            <span>Playwright</span>
+            <span>Python</span>
+            <span>Katalon</span>
+            <span>Selenium</span>
+            <span>Pytest</span>
+            <span>ghz</span>
+            <span>SQL</span>
+            <span>Kibana</span>
           </div>
-          <div class="container mb-5">
-            <div class="row justify-content-center g-4">
-
-              <!-- Project 0 -->
-              <div class="col-lg-4 mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                  <img class="card-img-top" src="images/projects/nds.png" alt="BRISurf">
-                  <div class="card-body p-4">
-                    <h5 class="card-title mb-3">New Delivery System</h5>
-                    <div class="mb-2">
-                      <div class="badge bg-primary rounded-pill">Katalon Studio</div>
-                      <div class="badge bg-primary rounded-pill">Stress Test</div>
-                      <div class="badge bg-primary rounded-pill">WSL</div>
-                      <div class="badge bg-primary rounded-pill">ghz</div>
-                    </div>
-                    <p class="card-text">
-                      Automated testing for New Delivery System using Katalon Studio, 
-                      BDD, and Custom Reports for detailed reporting.
-                    </p>
-                  </div>
-                  <div class="card-footer bg-transparent mb-3">
-                    <button
-                      class="btn btn-outline-primary btn-sm text-uppercase"
-                      data-bs-toggle="modal"
-                      data-bs-target="#projectModal0"
-                    >
-                      <span class="material-icons-outlined me-1">visibility</span>
-                      View Details
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project Modal 0 -->
-              <div class="modal fade" id="projectModal0" tabindex="-1" aria-labelledby="projectModalLabel0" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="projectModalLabel0">New Delivery System</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <p>
-                        This project focused on test automation and quality assurance for the
-                        New Delivery System (NDS), ensuring application reliability and stability
-                        across integrated banking services and supporting systems.
-                      </p>
-
-                      <p>
-                        The testing process covered automated functional and regression testing,
-                        Web UI, API, and gRPC validation, as well as performance and stress testing
-                        to identify potential issues and maintain system quality throughout the
-                        development and testing lifecycle.
-                      </p>
-
-                      <ul>
-                        <li>Designed and maintained test automation frameworks using Katalon Studio with BDD.</li>
-                        <li>Automated regression test scenarios for Web UI, API, and gRPC services.</li>
-                        <li>Performed API and gRPC testing to validate system functionality and integration.</li>
-                        <li>Executed performance and stress testing for gRPC services using ghz.</li>
-                        <li>Analyzed automation results and identified defects to improve system quality.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project 0 -->
-              <div class="col-lg-4 mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                  <img class="card-img-top" src="images/projects/Brisurf.png" alt="BRISurf">
-                  <div class="card-body p-4">
-                    <h5 class="card-title mb-3">BRISurf Insurance Platform</h5>
-                    <div class="mb-2">
-                      <div class="badge bg-primary rounded-pill">Playwright</div>
-                      <div class="badge bg-primary rounded-pill">API Testing</div>
-                      <div class="badge bg-primary rounded-pill">Kibana</div>
-                      <div class="badge bg-primary rounded-pill">SQL</div>
-                    </div>
-                    <p class="card-text">
-                      Quality assurance and system integration testing for BRISurf insurance services,
-                      ensuring reliable integration between branch systems, partners, and internal channels.
-                    </p>
-                  </div>
-                  <div class="card-footer bg-transparent mb-3">
-                    <button
-                      class="btn btn-outline-primary btn-sm text-uppercase"
-                      data-bs-toggle="modal"
-                      data-bs-target="#projectModal0"
-                    >
-                      <span class="material-icons-outlined me-1">visibility</span>
-                      View Details
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project Modal 0 -->
-              <div class="modal fade" id="projectModal0" tabindex="-1" aria-labelledby="projectModalLabel0" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="projectModalLabel0">BRISurf Insurance System</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <p>
-                        This project involved quality assurance and testing for BRISurf insurance services,
-                        ensuring system reliability across multiple integrated platforms including branch
-                        offices, insurance partners, and internal banking channels.
-                      </p>
-                      <p>
-                        The testing process covered functional testing, system integration testing,
-                        API validation, and regression automation to maintain application stability
-                        across development, piloting, and production environments.
-                      </p>
-                      <ul>
-                        <li>Performed System Integration Testing (SIT) and end-to-end testing.</li>
-                        <li>Validated APIs through ESB and WebMethods API Gateway.</li>
-                        <li>Analyzed logs using Kibana to troubleshoot system issues.</li>
-                        <li>Developed regression test automation using Playwright.</li>
-                        <li>Verified database data using SQL queries.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project 1 -->
-              <div class="col-lg-4 mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                  <img class="card-img-top" src="images/projects/NCMS.png" alt="Project 1">
-                  <div class="card-body p-4">
-                    <h5 class="card-title mb-3">New Cash Management System</h5>
-                    <div class="mb-2">
-                      <div class="badge bg-primary rounded-pill">Selenium WebDriver</div>
-                      <div class="badge bg-primary rounded-pill">Pytest</div>
-                      <div class="badge bg-primary rounded-pill">Allure Report</div>
-                    </div>
-                    <p class="card-text">
-                      Automated testing for New Cash Management System using Selenium WebDriver, 
-                      Pytest, and Python with Allure for detailed reporting.
-                    </p>
-                  </div>
-                  <div class="card-footer bg-transparent mb-3">
-                    <button
-                      class="btn btn-outline-primary btn-sm text-uppercase"
-                      data-bs-toggle="modal"
-                      data-bs-target="#projectModal1"
-                    >
-                      <span class="material-icons-outlined me-1">visibility</span>
-                      View Details
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- Project Modal 1 -->
-              <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="projectModalLabel1">New Cash Management System</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <p>
-                        In this project, automated testing was implemented for the New Cash Management System using Selenium WebDriver, Pytest, and Python. The project also included detailed reporting using Allure Report to ensure clear communication of testing outcomes. 
-                      </p>
-                      <p>
-                        The testing covered multiple critical functionalities to ensure the reliability and efficiency of the cash management processes within the system.
-                      </p>
-                      <ul>
-                        <li>Developed end-to-end test scripts using Selenium WebDriver.</li>
-                        <li>Utilized Pytest for structuring and executing the tests.</li>
-                        <li>Generated Allure Reports for comprehensive test results.</li>
-                        <li>Improved test coverage and reduced manual testing efforts.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project 2 -->
-              <div class="col-lg-4 mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                  <img class="card-img-top" src="images/projects/exa.jpg" alt="Project 1">
-                  <div class="card-body p-4">
-                    <h5 class="card-title mb-3">BSI Express Account</h5>
-                    <div class="mb-2">
-                      <div class="badge bg-primary rounded-pill">OpenText Functional Testing</div>
-                      <div class="badge bg-primary rounded-pill">GitLab</div>
-                      <div class="badge bg-primary rounded-pill">PDF Report</div>
-                    </div>
-                    <p class="card-text">
-                      Automated testing for BSI Express Account using OpenText Functional Testing, 
-                      GitLab, and PDF reporting for clear and structured results.
-                    </p>
-                  </div>
-                  <div class="card-footer bg-transparent mb-3">
-                    <button
-                      class="btn btn-outline-primary btn-sm text-uppercase"
-                      data-bs-toggle="modal"
-                      data-bs-target="#projectModal2"
-                    >
-                      <span class="material-icons-outlined me-1">visibility</span>
-                      View Details
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- Project Modal 2 -->
-              <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="projectModalLabel2">BSI Express Account</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <p>
-                        This project focused on automating the testing process for the BSI Express Account using 
-                        OpenText Functional Testing and GitLab for integration. PDF-based reports were generated 
-                        to ensure test results were presented in a clear and professional format.
-                      </p>
-                      <p>
-                        The automation helped validate key account functionalities, ensuring reliability, accuracy, 
-                        and reduced manual effort.
-                      </p>
-                      <ul>
-                        <li>Designed and executed test scripts using OpenText Functional Testing (UFT).</li>
-                        <li>Integrated test execution with GitLab CI/CD pipelines.</li>
-                        <li>Generated PDF reports for structured and shareable test results.</li>
-                        <li>Improved efficiency by reducing repetitive manual testing.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project 3 -->
-              <div class="col-lg-4 mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                  <img class="card-img-top" src="images/projects/Mobile Entry SHF.png" alt="Project 2">
-                  <div class="card-body p-4">
-                    <h5 class="card-title mb-3">Mobile Entry SHF</h5>
-                    <div class="mb-2">
-                      <div class="badge bg-primary rounded-pill">UiPath</div>
-                      <div class="badge bg-primary rounded-pill">Microsoft Excel</div>
-                    </div>
-                    <p class="card-text">
-                      Automated testing for Mobile Entry SHF using UiPath and Microsoft Excel.
-                    </p>
-                  </div>
-                  <div class="card-footer bg-transparent mb-3">
-                    <button
-                      class="btn btn-outline-primary btn-sm text-uppercase"
-                      data-bs-toggle="modal"
-                      data-bs-target="#projectModal3"
-                    >
-                      <span class="material-icons-outlined me-1">visibility</span>
-                      View Details
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- Project Modal 3 -->
-              <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel3" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="projectModalLabel3">Mobile Entry SHF</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <p>
-                        This project focused on automating the data entry process for SHF using UiPath and Microsoft Excel. The automation significantly reduced the manual effort required and improved data accuracy.
-                      </p>
-                      <p>
-                        The project involved the development of RPA (Robotic Process Automation) scripts that interfaced with various systems to streamline the SHF entry process.
-                      </p>
-                      <ul>
-                        <li>Automated data extraction and entry using UiPath.</li>
-                        <li>Integrated Microsoft Excel for data manipulation and validation.</li>
-                        <li>Enhanced process efficiency and reduced errors.</li>
-                        <li>Delivered a scalable solution for future data entry tasks.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project 4 -->
-              <div class="col-lg-4 mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                  <img class="card-img-top" src="images/projects/Mobile Entry Corporate.png" alt="Project 3">
-                  <div class="card-body p-4">
-                    <h5 class="card-title mb-3">Mobile Entry Corporate</h5>
-                    <div class="mb-2">
-                      <div class="badge bg-primary rounded-pill">UiPath</div>
-                      <div class="badge bg-primary rounded-pill">Microsoft Excel</div>
-                    </div>
-                    <p class="card-text">
-                      Automated testing for Mobile Entry Corporate using UiPath and Microsoft Excel.
-                    </p>
-                  </div>
-                  <div class="card-footer bg-transparent mb-3">
-                    <button
-                      class="btn btn-outline-primary btn-sm text-uppercase"
-                      data-bs-toggle="modal"
-                      data-bs-target="#projectModal4"
-                    >
-                      <span class="material-icons-outlined me-1">visibility</span>
-                      View Details
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- Project Modal 4 -->
-              <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModalLabel4" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="projectModalLabel4">Mobile Entry Corporate</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <p>
-                        This project focused on automating the data entry process for Corporate using UiPath and Microsoft Excel. The automation significantly reduced the manual effort required and improved data accuracy.
-                      </p>
-                      <p>
-                        The project involved the development of RPA (Robotic Process Automation) scripts that interfaced with various systems to streamline the Corporate entry process.
-                      </p>
-                      <ul>
-                        <li>Automated data extraction and entry using UiPath.</li>
-                        <li>Integrated Microsoft Excel for data manipulation and validation.</li>
-                        <li>Enhanced process efficiency and reduced errors.</li>
-                        <li>Delivered a scalable solution for future data entry tasks.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project 5 -->
-              <div class="col-lg-4 mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                  <img class="card-img-top" src="images/projects/AS.png" alt="Project 4">
-                  <div class="card-body p-4">
-                    <h5 class="card-title mb-3">Automated Network Traffic Documentation</h5>
-                    <div class="mb-2">
-                      <div class="badge bg-primary rounded-pill">Python</div>
-                      <div class="badge bg-primary rounded-pill">Selenium WebDriver</div>
-                    </div>
-                    <p class="card-text">
-                      Application created for Automatic Network Traffic Documentation.
-                    </p>
-                  </div>
-                  <div class="card-footer bg-transparent mb-3">
-                    <button
-                      class="btn btn-outline-primary btn-sm text-uppercase"
-                      data-bs-toggle="modal"
-                      data-bs-target="#projectModal5"
-                    >
-                      <span class="material-icons-outlined me-1">visibility</span>
-                      View Details
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- Project Modal 5 -->
-              <div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="projectModalLabel5" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="projectModalLabel5">Automated Network Traffic Documentation</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <p>
-                        This project involved the development of an automated solution for documenting network traffic. Using Python and Selenium WebDriver, the solution captures and logs network data, providing insights for network management.
-                      </p>
-                      <p>
-                        The project aimed to reduce the manual effort involved in network documentation and improve the accuracy and timeliness of data reporting.
-                      </p>
-                      <ul>
-                        <li>Developed Python scripts for automated data capture.</li>
-                        <li>Implemented Selenium WebDriver for interaction with web-based network tools.</li>
-                        <li>Automated report generation and data analysis.</li>
-                        <li>Improved efficiency in network monitoring and documentation.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project 6 -->
-              <div class="col-lg-4 mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                  <img class="card-img-top" src="images/projects/Aprova.png" alt="Project 5">
-                  <div class="card-body p-4">
-                    <h5 class="card-title mb-3">Aprova</h5>
-                    <div class="mb-2">
-                      <div class="badge bg-primary rounded-pill">UiPath</div>
-                      <div class="badge bg-primary rounded-pill">Microsoft Excel</div>
-                    </div>
-                    <p class="card-text">
-                      Automated testing for Aprova using UiPath and Microsoft Excel.
-                    </p>
-                  </div>
-                  <div class="card-footer bg-transparent mb-3">
-                    <button
-                      class="btn btn-outline-primary btn-sm text-uppercase"
-                      data-bs-toggle="modal"
-                      data-bs-target="#projectModal6"
-                    >
-                      <span class="material-icons-outlined me-1">visibility</span>
-                      View Details
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- Project Modal 6 -->
-              <div class="modal fade" id="projectModal6" tabindex="-1" aria-labelledby="projectModalLabel6" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="projectModalLabel6">Aprova</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <p>
-                        This project focused on automating the data entry process for Aprova using UiPath and Microsoft Excel. The automation significantly reduced the manual effort required and improved data accuracy.
-                      </p>
-                      <p>
-                        The project involved the development of RPA (Robotic Process Automation) scripts that interfaced with various systems to streamline the Aprova entry process.
-                      </p>
-                      <ul>
-                        <li>Automated data extraction and entry using UiPath.</li>
-                        <li>Integrated Microsoft Excel for data manipulation and validation.</li>
-                        <li>Enhanced process efficiency and reduced errors.</li>
-                        <li>Delivered a scalable solution for future data entry tasks.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project 7  -->
-              <div class="col-lg-4 mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                  <img class="card-img-top" src="images/projects/Portfolio.png" alt="Website Portfolio">
-                  <div class="card-body p-4">
-                    <h5 class="card-title mb-3">Website Portfolio</h5>
-                    <div class="mb-2">
-                      <div class="badge bg-primary rounded-pill">HTML</div>
-                      <div class="badge bg-primary rounded-pill">CSS</div>
-                      <div class="badge bg-primary rounded-pill">JavaScript</div>
-                    </div>
-                    <p class="card-text">
-                      A responsive and visually engaging personal portfolio website built using HTML, CSS, and JavaScript. This website showcases my projects, experience, and skills in a clean and user-friendly manner.
-                    </p>
-                  </div>
-                  <div class="card-footer bg-transparent mb-3">
-                    <button
-                      class="btn btn-outline-primary btn-sm text-uppercase"
-                      data-bs-toggle="modal"
-                      data-bs-target="#projectModal7"
-                    >
-                      <span class="material-icons-outlined me-1">visibility</span>
-                      View Details
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project Modal 7  -->
-              <div class="modal fade" id="projectModal7" tabindex="-1" aria-labelledby="projectModalLabel7" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="projectModalLabel7">Website Portfolio</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <p>
-                        This project involved creating a personal portfolio website that is fully responsive and optimized for different screen sizes. The website includes sections for my bio, skills, projects, and contact information.
-                      </p>
-                      <p>
-                        The main focus was on clean design and smooth user experience, with interactive elements implemented using JavaScript.
-                      </p>
-                      <ul>
-                        <li>Built with modern web technologies: HTML, CSS, and JavaScript.</li>
-                        <li>Implemented responsive design techniques to ensure compatibility with mobile and desktop devices.</li>
-                        <li>Added animations and interactive components for a dynamic user experience.</li>
-                        <li>Hosted on GitHub Pages for easy access and sharing.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </section>
-        <!-- End Projects -->
-
-
-        <hr>
-
-        <!-- Certificates -->
-        <section id="certificate" class="text-center py-5">
-          <div class="container py-5">
-            <div class="row justify-content-center">
-              <h2 class="fw-bold">Certificates</h2>
-              <p class="lead text-muted mb-5">Certificates and qualifications</p>
-            </div>
-            <div class="row">
-              <!-- Certificate Item 1 -->
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                    <img class="card-img-top" src="images/cetrificate/0.jpg" alt="Certificate 1" data-bs-toggle="modal" data-bs-target="#certificateModal1">
-                    <div class="card-body p-4">
-                        <h5 class="card-title mb-3">Python from Scratch & Selenium WebDriver QA Automation 2023</h5>
-                        <p class="card-text">
-                            This certificate demonstrates foundational skills in Python programming and expertise in QA automation using Selenium WebDriver.
-                        </p>
-                    </div>
-                </div>
-              </div>
-              <!-- Certificate Modal 1 -->
-              <div class="modal fade" id="certificateModal1" tabindex="-1" aria-labelledby="certificateModalLabel1" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="certificateModalLabel1">Python from Scratch & Selenium WebDriver QA Automation 2023</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="images/cetrificate/0.jpg" class="img-fluid" alt="Certificate 1">
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-              <!-- Certificate Item 2 -->
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                    <img class="card-img-top" src="images/cetrificate/1.jpg" alt="Certificate 2" data-bs-toggle="modal" data-bs-target="#certificateModal2">
-                    <div class="card-body p-4">
-                        <h5 class="card-title mb-3">Junior Computer Technicians</h5>
-                        <p class="card-text">
-                            This certificate validates essential technical skills and knowledge for entry-level computer technicians.
-                        </p>
-                    </div>
-                </div>
-              </div>
-              <!-- Certificate Modal 2 -->
-              <div class="modal fade" id="certificateModal2" tabindex="-1" aria-labelledby="certificateModalLabel2" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="certificateModalLabel2">Junior Computer Technicians</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="images/cetrificate/1.jpg" class="img-fluid" alt="Certificate 2">
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-              <!-- Certificate Item 3 -->
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                    <img class="card-img-top" src="images/cetrificate/2.jpg" alt="Certificate 3" data-bs-toggle="modal" data-bs-target="#certificateModal3">
-                    <div class="card-body p-4">
-                        <h5 class="card-title mb-3">Workshop Basic Unit Testing with GOLANG</h5>
-                        <p class="card-text">
-                            This certificate highlights knowledge in unit testing practices using Golang, essential for ensuring code quality.
-                        </p>
-                    </div>
-                </div>
-              </div>
-              <!-- Certificate Modal 3 -->
-              <div class="modal fade" id="certificateModal3" tabindex="-1" aria-labelledby="certificateModalLabel3" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="certificateModalLabel3">Workshop Basic Unit Testing with GOLANG</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="images/cetrificate/2.jpg" class="img-fluid" alt="Certificate 3">
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-              <!-- Certificate Item 4 -->
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                    <img class="card-img-top" src="images/cetrificate/3.jpg" alt="Certificate 3" data-bs-toggle="modal" data-bs-target="#certificateModal4">
-                    <div class="card-body p-4">
-                        <h5 class="card-title mb-3">Workshop Backend 101</h5>
-                        <p class="card-text">
-                            This certificate represents my participation in the Workshop Backend 101, where I gained foundational knowledge in backend development.
-                        </p>
-                    </div>
-                </div>
-              </div>
-              <!-- Certificate Modal 4 -->
-              <div class="modal fade" id="certificateModal4" tabindex="-1" aria-labelledby="certificateModalLabel4" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="certificateModalLabel4">Workshop Backend 101</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="images/cetrificate/3.jpg" class="img-fluid" alt="Certificate 3">
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-              <!-- Certificate Item 5 -->
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                    <img class="card-img-top" src="images/cetrificate/4.jpg" alt="Certificate 5" data-bs-toggle="modal" data-bs-target="#certificateModal5">
-                    <div class="card-body p-4">
-                        <h5 class="card-title mb-3">E-Learning: What is Wrong with Data for Outsource</h5>
-                        <p class="card-text">
-                            This certificate acknowledges my understanding of data challenges in outsourcing, focusing on data integrity, security, and effective management in outsourced environments.
-                        </p>
-                    </div>
-                </div>
-              </div>
-              <!-- Certificate Modal 5 -->
-              <div class="modal fade" id="certificateModal5" tabindex="-1" aria-labelledby="certificateModalLabel5" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="certificateModalLabel5">E-Learning: What is Wrong with Data for Outsource</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="images/cetrificate/4.jpg" class="img-fluid" alt="Certificate 5">
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-              <!-- Certificate Item 6 -->
-              <div class="col-lg-4 mx-auto mb-5">
-                <div class="card h-100 shadow-lg border-0 bg-light">
-                    <img class="card-img-top" src="images/cetrificate/8.png" alt="Certificate 3" data-bs-toggle="modal" data-bs-target="#certificateModal6">
-                    <div class="card-body p-4">
-                        <h5 class="card-title mb-3">Scientific Publication Dissemination from Computer Science Student</h5>
-                        <p class="card-text">
-                            This certificate demonstrates my involvement in disseminating scientific publications, particularly those originating from computer science research, contributing to academic knowledge sharing.
-                        </p>
-                    </div>
-                </div>
-              </div>
-              <!-- Certificate Modal 6 -->
-              <div class="modal fade" id="certificateModal6" tabindex="-1" aria-labelledby="certificateModalLabel6" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="certificateModalLabel6">Scientific Publication Dissemination from Computer Science Student</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="images/cetrificate/8.png" class="img-fluid" alt="Certificate 6">
-                        </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End Certificates -->
-
-        <hr>
-
-        <!-- Contact -->
-        <section id="contact" class="text-center py-5">
-          <div class="container py-5">
-            <div class="row justify-content-center">
-              <h2 class="fw-bold">Contact</h2>
-              <p class="lead text-muted mb-5">I'd love to hear from you</p>
-              <div class="col-lg-8 col-xl-6">
-                <form id="contact-form">
-                  <div class="mb-3">
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
-                  </div>
-                  <div class="mb-3">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
-                  </div>
-                  <div class="mb-3">
-                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- End Contact -->
-      </main>
-
-      <!-- Footer -->
-      <footer class="bg-light py-5">
-        <div class="container text-center">
-          <p class="text-muted mb-0">© 2024 Aldo Hidayat. All rights reserved.</p>
         </div>
-      </footer>
-      <!-- End Footer -->
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section-pad">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">02 / EXPERIENCE</span>
+          <h2>A journey through<br><span>quality & automation.</span></h2>
+        </div>
+
+        <div class="timeline">
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"><img src="images/experience/bri.png" alt="BRI"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <div>
+                  <span class="timeline-date">2026 - CURRENT</span>
+                  <h3>PT Bank Rakyat Indonesia</h3>
+                  <p>QA Automation Engineer</p>
+                </div>
+                <span class="timeline-tag">AUTOMATION</span>
+              </div>
+              <ul>
+                <li>Designed and maintained test automation frameworks using Katalon Studio with BDD.</li>
+                <li>Automated regression testing for Web UI, API, and gRPC services.</li>
+                <li>Performed performance and stress testing for gRPC services using ghz.</li>
+                <li>Managed automation source code using Git in an Agile/Scrum environment.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"><img src="images/experience/bri.png" alt="BRI"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <div>
+                  <span class="timeline-date">2025 - 2026 (PREVIOUS ROLE)</span>
+                  <h3>PT Bank Rakyat Indonesia</h3>
+                  <p>Quality Assurance Engineer</p>
+                </div>
+                <span class="timeline-tag">QA</span>
+              </div>
+              <ul>
+                <li>Designed and executed SIT, UAT, piloting, functional, integration, and E2E testing.</li>
+                <li>Performed API validation across ESB and WebMethods API Gateway.</li>
+                <li>Analyzed logs using Kibana and prepared test data using SQL.</li>
+                <li>Maintained regression automation using Playwright with POM.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"><img src="images/experience/bsi.png" alt="BSI"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <div>
+                  <span class="timeline-date">2023 — 2025</span>
+                  <h3>PT Bank Syariah Indonesia</h3>
+                  <p>QA Automation Engineer</p>
+                </div>
+                <span class="timeline-tag">AUTOMATION</span>
+              </div>
+              <ul>
+                <li>Developed automated test scripts using Selenium Pytest with Python and UFT.</li>
+                <li>Implemented Page Object Model for structured automation frameworks.</li>
+                <li>Used GitLab and JIRA for version control, sprint planning, and bug tracking.</li>
+                <li>Generated automated test reports using Allure Report.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"><img src="images/experience/bcaf.png" alt="BCA Finance"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <div>
+                  <span class="timeline-date">2023</span>
+                  <h3>PT BCA Finance</h3>
+                  <p>Software Quality Assurance</p>
+                </div>
+                <span class="timeline-tag">QA / RPA</span>
+              </div>
+              <ul>
+                <li>Worked on application automation using UiPath and Katalon Studio.</li>
+                <li>Developed RPA and testing automation solutions.</li>
+                <li>Performed manual testing for mobile and web applications.</li>
+                <li>Contributed to more than 25 UAT projects and automation initiatives.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"><img src="images/experience/bca.png" alt="BCA"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <div>
+                  <span class="timeline-date">2022 (EARLY CAREER)</span>
+                  <h3>PT Bank Central Asia</h3>
+                  <p>IT Mechanical Support</p>
+                </div>
+                <span class="timeline-tag">IT SUPPORT</span>
+              </div>
+              <ul>
+                <li>Provided IT mechanical support and ensured smooth system operations.</li>
+                <li>Maintained hardware and IT infrastructure across operational environments.</li>
+                <li>Built foundational experience in enterprise IT systems and support.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section-pad section-dark">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">03 / PROJECTS</span>
+          <h2>Selected work &<br><span>testing projects.</span></h2>
+        </div>
+
+        <div class="featured-project reveal">
+          <div class="featured-image">
+            <img src="images/projects/nds.png" alt="New Delivery System">
+          </div>
+          <div class="featured-body">
+            <span class="project-number">01 — FEATURED PROJECT</span>
+            <h3>New Delivery System</h3>
+            <p>
+              Test automation and quality assurance for an integrated banking
+              system, covering Web UI, API, gRPC, regression, performance, and stress testing.
+            </p>
+            <div class="tag-list">
+              <span>Katalon Studio</span><span>BDD</span><span>gRPC</span><span>ghz</span><span>Stress Test</span>
+            </div>
+            <button class="btn btn-primary mt-4" data-bs-toggle="modal" data-bs-target="#projectModalNDS">
+              View Case Study <span class="material-icons-outlined ms-2">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-1">
+          <div class="col-lg-6 reveal">
+            <div class="project-card">
+              <img src="images/projects/Brisurf.png" alt="BRISurf Insurance Platform">
+              <div class="project-card-body">
+                <span class="project-number">02</span>
+                <h3>BRISurf Insurance Platform</h3>
+                <p>QA and system integration testing across branch, partner, and internal banking systems.</p>
+                <div class="tag-list"><span>Playwright</span><span>API</span><span>Kibana</span><span>SQL</span></div>
+                <button class="project-link" data-bs-toggle="modal" data-bs-target="#projectModalBRI">
+                  View Details <span class="material-icons-outlined">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal reveal-delay">
+            <div class="project-card">
+              <img src="images/projects/NCMS.png" alt="New Cash Management System">
+              <div class="project-card-body">
+                <span class="project-number">03</span>
+                <h3>New Cash Management System</h3>
+                <p>Automated testing using Selenium WebDriver, Pytest, Python, and Allure reporting.</p>
+                <div class="tag-list"><span>Selenium</span><span>Pytest</span><span>Python</span><span>Allure</span></div>
+                <button class="project-link" data-bs-toggle="modal" data-bs-target="#projectModalNCMS">
+                  View Details <span class="material-icons-outlined">arrow_forward</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-1">
+          <div class="col-md-4 reveal">
+            <div class="mini-project">
+              <img src="images/projects/exa.jpg" alt="BSI Express Account">
+              <div>
+                <span class="project-number">04</span>
+                <h4>BSI Express Account</h4>
+                <p>UFT automation with GitLab and PDF reporting.</p>
+                <div class="tag-list"><span>UFT</span><span>GitLab</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 reveal">
+            <div class="mini-project">
+              <img src="images/projects/Mobile Entry SHF.png" alt="Mobile Entry SHF">
+              <div>
+                <span class="project-number">05</span>
+                <h4>Mobile Entry SHF</h4>
+                <p>RPA automation for data entry using UiPath and Excel.</p>
+                <div class="tag-list"><span>UiPath</span><span>Excel</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 reveal">
+            <div class="mini-project">
+              <img src="images/projects/Mobile Entry Corporate.png" alt="Mobile Entry Corporate">
+              <div>
+                <span class="project-number">06</span>
+                <h4>Mobile Entry Corporate</h4>
+                <p>Automated corporate data entry workflow.</p>
+                <div class="tag-list"><span>UiPath</span><span>Excel</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 reveal">
+            <div class="mini-project">
+              <img src="images/projects/AS.png" alt="Automated Network Traffic Documentation">
+              <div>
+                <span class="project-number">07</span>
+                <h4>Network Traffic Documentation</h4>
+                <p>Python and Selenium automation for network documentation.</p>
+                <div class="tag-list"><span>Python</span><span>Selenium</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 reveal">
+            <div class="mini-project">
+              <img src="images/projects/Aprova.png" alt="Aprova">
+              <div>
+                <span class="project-number">08</span>
+                <h4>Aprova</h4>
+                <p>RPA-based data entry automation solution.</p>
+                <div class="tag-list"><span>UiPath</span><span>Excel</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 reveal">
+            <div class="mini-project">
+              <img src="images/projects/Portfolio.png" alt="Website Portfolio">
+              <div>
+                <span class="project-number">09</span>
+                <h4>Personal Portfolio</h4>
+                <p>Responsive portfolio website built for showcasing my work.</p>
+                <div class="tag-list"><span>HTML</span><span>CSS</span><span>JS</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificate" class="section-pad">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">04 / CERTIFICATES</span>
+          <h2>Learning, building,<br><span>and staying curious.</span></h2>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- Certificate 01 -->
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="certificate-card">
+
+              <div class="certificate-image">
+                <img
+                  src="images/cetrificate/0.jpg"
+                  alt="Python and Selenium WebDriver QA Automation certificate">
+              </div>
+
+              <div class="certificate-content">
+                <span class="certificate-number">01</span>
+
+                <h3>
+                  Python & Selenium WebDriver QA Automation
+                </h3>
+
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#certModal1">
+                  View Certificate
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- Certificate 02 -->
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="certificate-card">
+
+              <div class="certificate-image">
+                <img
+                  src="images/cetrificate/1.jpg"
+                  alt="Junior Computer Technicians certificate">
+              </div>
+
+              <div class="certificate-content">
+                <span class="certificate-number">02</span>
+
+                <h3>
+                  Junior Computer Technicians
+                </h3>
+
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#certModal2">
+                  View Certificate
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- Certificate 03 -->
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="certificate-card">
+
+              <div class="certificate-image">
+                <img
+                  src="images/cetrificate/2.jpg"
+                  alt="Workshop Basic Unit Testing with Golang certificate">
+              </div>
+
+              <div class="certificate-content">
+                <span class="certificate-number">03</span>
+
+                <h3>
+                  Basic Unit Testing with Golang
+                </h3>
+
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#certModal3">
+                  View Certificate
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- Certificate 04 -->
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="certificate-card">
+
+              <div class="certificate-image">
+                <img
+                  src="images/cetrificate/3.jpg"
+                  alt="Workshop Backend 101 certificate">
+              </div>
+
+              <div class="certificate-content">
+                <span class="certificate-number">04</span>
+
+                <h3>
+                  Workshop Backend 101
+                </h3>
+
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#certModal4">
+                  View Certificate
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- Certificate 05 -->
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="certificate-card">
+
+              <div class="certificate-image">
+                <img
+                  src="images/cetrificate/4.jpg"
+                  alt="What is Wrong with Data for Outsource certificate">
+              </div>
+
+              <div class="certificate-content">
+                <span class="certificate-number">05</span>
+
+                <h3>
+                  What is Wrong with Data for Outsource
+                </h3>
+
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#certModal5">
+                  View Certificate
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- Certificate 06 -->
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="certificate-card">
+
+              <div class="certificate-image">
+                <img
+                  src="images/cetrificate/8.png"
+                  alt="Scientific Publication Dissemination certificate">
+              </div>
+
+              <div class="certificate-content">
+                <span class="certificate-number">06</span>
+
+                <h3>
+                  Scientific Publication Dissemination
+                </h3>
+
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#certModal6">
+                  View Certificate
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-pad contact-section section-dark">
+      <div class="container">
+        <div class="contact-box reveal">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <span class="section-kicker">05 / CONTACT</span>
+              <h2>Let's build better<br><span>software together.</span></h2>
+              <p>
+                Have a project, opportunity, or just want to talk about QA and automation?
+                Send me a message.
+              </p>
+              <a href="https://www.linkedin.com/in/aldohidayat98/" target="_blank" rel="noopener" class="social-link">
+                <span class="material-icons-outlined">work</span>
+                LinkedIn
+              </a>
+            </div>
+
+            <div class="col-lg-6">
+              <form id="contact-form" class="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary w-100">
+                  Send Message <span class="material-icons-outlined ms-2">send</span>
+                </button>
+                <small id="form-status" class="form-status"></small>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0">© 2026 Aldo Hidayat. All rights reserved.</p>
+      <a href="#home">Back to top <span class="material-icons-outlined">north</span></a>
     </div>
+  </footer>
 
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Project Modals -->
+  <div class="modal fade" id="projectModalNDS" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content modern-modal">
+        <div class="modal-header">
+          <h5 class="modal-title">New Delivery System</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>This project focused on test automation and quality assurance for the New Delivery System, covering integrated banking services and supporting systems.</p>
+          <ul>
+            <li>Designed and maintained Katalon Studio automation with BDD.</li>
+            <li>Automated Web UI, API, and gRPC regression scenarios.</li>
+            <li>Performed API and gRPC validation.</li>
+            <li>Executed performance and stress testing using ghz.</li>
+            <li>Analyzed automation results and identified defects.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Custom JS -->
-    <script>
-      document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        var formData = new FormData(this);
-        fetch('https://script.google.com/macros/s/AKfycbwY5uXbXlBZ4-9nA06RnOaKKg8lSxkQUvkBe4UHXn3STy4mcKg2lxu212fCPuwlPr5DsA/exec', {
-          method: 'POST',
-          body: formData
-        })
-        .then(response => response.json())
-        .then(data => {
-          alert('Message sent successfully!');  
-          document.getElementById('contact-form').reset();
-        })
-        .catch(error => {
-          alert('An error occurred while sending your message.');
-        });
-      });
-    </script>
-  </body>
+  <div class="modal fade" id="projectModalBRI" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content modern-modal">
+        <div class="modal-header">
+          <h5 class="modal-title">BRISurf Insurance Platform</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>QA and testing for BRISurf insurance services across branch offices, insurance partners, and internal banking channels.</p>
+          <ul>
+            <li>Performed SIT and end-to-end testing.</li>
+            <li>Validated APIs through ESB and WebMethods API Gateway.</li>
+            <li>Analyzed logs using Kibana.</li>
+            <li>Developed regression automation using Playwright.</li>
+            <li>Verified database data using SQL queries.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModalNCMS" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content modern-modal">
+        <div class="modal-header">
+          <h5 class="modal-title">New Cash Management System</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Automated testing using Selenium WebDriver, Pytest, and Python with Allure reporting.</p>
+          <ul>
+            <li>Developed end-to-end test scripts.</li>
+            <li>Structured and executed tests using Pytest.</li>
+            <li>Generated Allure reports.</li>
+            <li>Improved coverage and reduced repetitive manual testing.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Certificate Modals -->
+  <div class="modal fade" id="certModal1" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content modern-modal"><div class="modal-header"><h5 class="modal-title">Python & Selenium WebDriver QA Automation 2023</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><img src="images/cetrificate/0.jpg" class="img-fluid" alt="Certificate"></div></div></div></div>
+  <div class="modal fade" id="certModal2" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content modern-modal"><div class="modal-header"><h5 class="modal-title">Junior Computer Technicians</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><img src="images/cetrificate/1.jpg" class="img-fluid" alt="Certificate"></div></div></div></div>
+  <div class="modal fade" id="certModal3" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content modern-modal"><div class="modal-header"><h5 class="modal-title">Workshop Basic Unit Testing with GOLANG</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><img src="images/cetrificate/2.jpg" class="img-fluid" alt="Certificate"></div></div></div></div>
+  <div class="modal fade" id="certModal4" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content modern-modal"><div class="modal-header"><h5 class="modal-title">Workshop Backend 101</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><img src="images/cetrificate/3.jpg" class="img-fluid" alt="Certificate"></div></div></div></div>
+  <div class="modal fade" id="certModal5" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content modern-modal"><div class="modal-header"><h5 class="modal-title">What is Wrong with Data for Outsource</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><img src="images/cetrificate/4.jpg" class="img-fluid" alt="Certificate"></div></div></div></div>
+  <div class="modal fade" id="certModal6" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content modern-modal"><div class="modal-header"><h5 class="modal-title">Scientific Publication Dissemination</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><img src="images/cetrificate/8.png" class="img-fluid" alt="Certificate"></div></div></div></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
 </html>
